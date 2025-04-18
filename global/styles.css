@@ -19,6 +19,8 @@ a {
   list-style: none;
 }
 
+/* __________________________NAV __________________________ */
+
 nav {
   height: 5vh;
   min-height: 50px;
@@ -27,6 +29,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.darkModeButton, .wackyButton {
+  border: 2px solid black;
+  height: 20px;
+  width: 70px;
+  text-align: center;
+  line-height: 20px;
 }
 
 /* __________________________Global class__________________________ */
@@ -49,9 +64,4 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: var(--lightblue);
-}
-
-nav ul {
-  display: flex;
-  gap: 20px;
 }

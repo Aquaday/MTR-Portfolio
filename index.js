@@ -1,0 +1,1 @@
+import {darkMode} from "./global/script.js"

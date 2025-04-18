@@ -1,7 +1,7 @@
 :root {
-  --darkest-blue: #03045eff;
-  --darker-blue: #0077b6ff;
-  --middle-blue: #00b4d8ff;
+  --darkestblue: #03045eff;
+  --darkerblue: #0077b6ff;
+  --middleblue: #00b4d8ff;
   --lightblue: #90e0efff;
   --white: #fff;
   --black: #000;
@@ -22,7 +22,8 @@ a {
 nav {
   height: 5vh;
   min-height: 50px;
-  background-color: var(--darker-blue);
+  background-color: var(--darkestblue);
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +48,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--lightblue);
 }
 
 nav ul {

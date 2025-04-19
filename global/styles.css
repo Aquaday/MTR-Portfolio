@@ -29,6 +29,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 30px;
 }
 
 nav ul {
@@ -59,7 +60,7 @@ nav ul {
 /* __________________________Hero Section__________________________ */
 
 .heroSection {
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

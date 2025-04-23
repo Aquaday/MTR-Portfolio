@@ -1,8 +1,12 @@
 :root {
-  --darkestblue: #03045eff;
+  /* --darkestblue: #03045eff;
   --darkerblue: #0077b6ff;
   --middleblue: #00b4d8ff;
-  --lightblue: #90e0efff;
+  --lightblue: #90e0efff; */
+  --darkestblue: #000;
+  --darkerblue: #000;
+  --middleblue: #fff;
+  --lightblue: #fff;
   --white: #fff;
   --black: #000;
 }
@@ -93,6 +97,7 @@ nav ul {
   border: 2px solid var(--black);
   border-radius: 20px;
   text-align: center;
+  color: var(--lightblue);
 }
 
 

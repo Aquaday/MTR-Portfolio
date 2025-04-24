@@ -1,26 +1,32 @@
 :root {
-  /* --darkestblue: #03045eff;
+  --darkestblue: #03045eff;
   --darkerblue: #0077b6ff;
   --middleblue: #00b4d8ff;
-  --lightblue: #90e0efff; */
-  --darkestblue: #000;
-  --darkerblue: #000;
-  --middleblue: #fff;
-  --lightblue: #fff;
+  --lightblue: #90e0efff;
   --white: #fff;
   --black: #000;
 }
+
+
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
 
 body {
   margin: 0;
   box-sizing: border-box;
   color: var(--black);
+  font-family: "Roboto", sans-serif;
 }
 
 li,
 a {
   text-decoration: none;
   list-style: none;
+  color: var(--white);
 }
 
 /* __________________________NAV __________________________ */
@@ -28,7 +34,7 @@ a {
 nav {
   height: 5vh;
   min-height: 50px;
-  background-color: var(--darkestblue);
+  background-color: var(--darkerblue);
   color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -41,12 +47,18 @@ nav ul {
   gap: 20px;
 }
 
+nav a 
+
 .darkModeButton, .wackyButton {
   border: 2px solid black;
   height: 20px;
   width: 70px;
   text-align: center;
   line-height: 20px;
+}
+
+.wackyButton {
+  background-color: var(--white);
 }
 
 /* __________________________Global class__________________________ */
@@ -58,18 +70,18 @@ nav ul {
 }
 
 .smallGap {
-  gap: 5px;
+  gap: 10px;
 }
 
 /* __________________________Hero Section__________________________ */
 
 .heroSection {
-  min-height: 95vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: var(--lightblue);
+  background-color: var(--white);
 }
 
 .heroTitle {
@@ -86,9 +98,11 @@ nav ul {
 }
 
 .heroCard {
-  width: 190px;
+  min-width: 190px;
+  width: 20%;
   background-color: var(--darkerblue);
-  height: 300px;
+  min-height: 300px;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,17 +111,21 @@ nav ul {
   border: 2px solid var(--black);
   border-radius: 20px;
   text-align: center;
-  color: var(--lightblue);
+  color: var(--white);
 }
 
+.heroCard a {
+  color: var(--white); 
+  text-decoration: none;
+  border: 2px solid var(--white);
+  border-radius: 3px;
+  padding:5px;
+}
 
+.heroCard a:hover {
+  background-color: var(--darkestblue);
+}
 
 .heroCard img {
   width: 190px;
-}
-
-.heroCard button {
-  height: 30px;
-  border-radius: 10px;
-  border: 2px solid var(--black);
 }

@@ -24,7 +24,6 @@ li,
 a {
   text-decoration: none;
   list-style: none;
-  color: var(--white);
 }
 
 /* __________________________NAV __________________________ */
@@ -97,7 +96,19 @@ nav a
 }
 
 #displayContent {
-  height: 50vh;
-  background-color: var(--lightgray);
+  min-height: 50vh;
 }
 
+#displayContent img {
+  height: 10vh;
+}
+
+.divElement {
+  border-bottom: 1px solid var(--lightgray);
+  padding: 10px;
+}
+
+.divElement button {
+  padding: 5px;
+  font-size: 150%;
+}

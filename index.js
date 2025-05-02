@@ -21,7 +21,7 @@ let designsArray = [
         name: "Orange Armchair",
         info: "An orange armchair with matching footrest",
         gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
+        stackLink: "https://github.com/Aquaday/Goodbrief---Foundation-Furnitures?tab=readme-ov-file"
     },
     {
         image: "stone.png",
@@ -116,22 +116,28 @@ let chosenArray = ""
 let showDesigns = document.querySelector("#designsButton")
 let showWork = document.querySelector("#workButton")
 let showOther = document.querySelector("#otherButton")
+let designArrow = document.querySelector("#designArrow")
+let workArrow = document.querySelector("#workArrow")
+let otherArrow = document.querySelector("#otherArrow")
 
 showDesigns.addEventListener("click", () => {
     chosenArrayLength = designsArray.length
     chosenArray = designsArray
+    designArrow.classList.add("flipArrow")
     placeElements()
 })
 
 showWork.addEventListener("click", () => {
     chosenArrayLength = workArray.length
     chosenArray = workArray
+    workArrow.classList.add("flipArrow")
     placeElements()
 })
 
 showOther.addEventListener("click", () => {
     chosenArrayLength = otherArray.length
     chosenArray = otherArray
+    otherArrow.classList.add("flipArrow")
     placeElements()
 })
 

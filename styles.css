@@ -83,12 +83,20 @@ nav a
 
 /* _____________________________Pages___________________________________________________ */
 
-#groupHeaders h2 {
+#groupHeaders div {
   width: 33%;
   border: 2px solid var(--gray);
   line-height: 20px;
   padding: 10px;
   margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#groupHeaders img {
+  width: 20px;
+  height: 20px;
 }
 
 #groupHeaders {
@@ -111,4 +119,18 @@ nav a
 .divElement button {
   padding: 5px;
   font-size: 150%;
+}
+
+.flipArrow {
+  animation-name: flipArrow;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flipArrow {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(180deg)
+  }
 }

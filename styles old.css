@@ -1,6 +1,8 @@
 :root {
-  --gray:#888888;
-  --lightgray: #bbbbbb;
+  --darkestblue: #03045eff;
+  --darkerblue: #0077b6ff;
+  --middleblue: #00b4d8ff;
+  --lightblue: #90e0efff;
   --white: #fff;
   --black: #000;
 }
@@ -82,22 +84,48 @@ nav a
   background-color: var(--white);
 }
 
-/* _____________________________Pages___________________________________________________ */
-
-#groupHeaders h2 {
-  width: 33%;
-  border: 2px solid var(--gray);
-  line-height: 20px;
-  padding: 10px;
-  margin: 0;
+.heroTitle {
+  width: 100%;
+  text-align: center;
 }
 
-#groupHeaders {
+.heroCardSection {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
 }
 
-#displayContent {
-  height: 50vh;
-  background-color: var(--lightgray);
+.heroCard {
+  min-width: 190px;
+  width: 20%;
+  background-color: var(--darkerblue);
+  min-height: 300px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid var(--black);
+  border-radius: 20px;
+  text-align: center;
+  color: var(--white);
 }
 
+.heroCard a {
+  color: var(--white); 
+  text-decoration: none;
+  border: 2px solid var(--white);
+  border-radius: 3px;
+  padding:5px;
+}
+
+.heroCard a:hover {
+  background-color: var(--darkestblue);
+}
+
+.heroCard img {
+  width: 190px;
+}

@@ -22,10 +22,31 @@ let designsArray = [
         info: "First website created from Kodeloftet course",
         websiteLink : "https://first-website-fjellturer-i-norge.vercel.app/",
         gitLink: "https://github.com/Aquaday/kodeloftet-oppgave-3-plan-and-create-website"
+    },
+    {
+        image: "designImages/MTR portfoilo.png",
+        name: "This website",
+        info: "This website",
+        websiteLink : "https://mtr-portfolio-chi.vercel.app/",
+        gitLink: "https://github.com/Aquaday/MTR-Portfolio"
     }
 ]
 
 let workArray = [
+    // {
+    //     image: "designImages/FoundationFurnitures.png",
+    //     name: "Foundation Furnitures",
+    //     info: "A design project, idea from Goodbrief",
+    //     websiteLink : "https://goodbrief-foundation-furnitures.vercel.app/",
+    //     gitLink: "https://github.com/Aquaday/Goodbrief---Foundation-Furnitures"
+    // },
+    // {
+    //     image: "designImages/Fjellturerinorge.png",
+    //     name: "Fjellturer i norge",
+    //     info: "First website created from Kodeloftet course",
+    //     websiteLink : "https://first-website-fjellturer-i-norge.vercel.app/",
+    //     gitLink: "https://github.com/Aquaday/kodeloftet-oppgave-3-plan-and-create-website"
+    // }
 
 ]
 
@@ -34,7 +55,7 @@ let otherArray = [
     {
         image: "otherImages/RockPaperScissors.png",
         name: "rock-paper-scissors",
-        info: "Stein saks papir med ting på",
+        info: "Rock paper scissors, 4 different versions",
         websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
         gitLink: "https://github.com/Aquaday/rock-paper-scissors"
     },
@@ -168,10 +189,10 @@ function placeElements() {
              +'</p></div><div class="displayContentButtons">'
              + '<a href="' 
              + chosenArray[arrayNumber].websiteLink  
-             + '">Link til nettsiden</a>'
+             + '">Link to Website</a>'
              + '<a href="' 
              + chosenArray[arrayNumber].gitLink 
-             + '">Link til GitHub</a></div>'
+             + '">Link to GitHub</a></div>'
              + '</div></div>' 
         displayContent.appendChild(divElement)
         arrayNumber = arrayNumber + 1

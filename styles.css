@@ -3,9 +3,9 @@
   --lightgray: #bbbbbb;
   --white: #fff;
   --black: #000;
-  --dark: #023e8a;
-  --lighter: #0096c7;
-  --lightest: #ade8f4;
+  --dark: #16205B;
+  --lighter: #55BFD7;
+  --lightest: #A4E7F8;
 }
 
 
@@ -85,23 +85,53 @@ nav h1 {
 
 /* __________________________Hero Section__________________________ */
 
-.heroSection {
+#heroSection {
   min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: var(--white);
+}
+
+#heroSection h2 {
+  width: 100%;
+  text-align: center;
+}
+
+#heroDiv {
+  max-width: 800px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  border: 1px solid var(--dark);
+  border-radius: 8px;
+}
+
+#heroImg {
+  border-radius: 8px 0px 0px 8px;
+  width: 300px;
+}
+
+#heroText {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  background-color: var(--white);
+}
+
+#heroDiv h3, p {
+  width: 400px;
 }
 
 /* _____________________________Pages___________________________________________________ */
 
 #groupHeaders div {
   min-width: 220px;
-  padding: 5px;
-  border: 2px solid var(--dark);
+  padding: 0px 20px;
+  border: 1px solid var(--dark);
   border-bottom: none;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
   background-color: var(--lighter);
   color: var(--white);
   line-height: 20px;
@@ -142,12 +172,12 @@ nav h1 {
 
 #displayContent img {
   height: 30vh;
-  box-shadow: 0 5px 10px rgba(72, 72, 72, 0.8),
-  0 15px 40px rgba(86, 86, 86, 0.2);
+  box-shadow: 0 5px 10px rgba(72, 72, 72, 0.1),
+  0 5px 10px rgba(86, 86, 86, 0.1);
 }
 
 .divElement {
-  border-bottom: 2px solid var(--lightest);
+  border-bottom: 1px solid var(--lightest);
   text-align: center;
   margin: 15px 0px;
 
@@ -167,9 +197,9 @@ nav h1 {
   color: var(--white);
   border-radius: 20px;
   background-color: var(--lighter);
-  border: 2px solid var(--dark);
-  box-shadow: 0 3px 10px rgba(72, 72, 72, 0.4),
-              0 3px 10px rgba(86, 86, 86, 0.1);
+  border: 1px solid var(--dark);
+  box-shadow: 0 3px 5px rgba(72, 72, 72, 0.2),
+              0 3px 5px rgba(86, 86, 86, 0.1);
 }
 
 .flipArrow {

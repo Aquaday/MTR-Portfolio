@@ -13,7 +13,7 @@ let designsArray = [
         image: "designImages/FoundationFurnitures.png",
         name: "Foundation Furnitures",
         info: "A design project, idea from Goodbrief",
-        websiteLink : "https://goodbrieffoundationfurnitures.vercel.app/",
+        websiteLink : "https://goodbrief-foundation-furnitures.vercel.app/",
         gitLink: "https://github.com/Aquaday/Goodbrief---Foundation-Furnitures"
     },
     {
@@ -55,8 +55,6 @@ let otherArray = [
 
 ]
 
-
-
 let chosenArrayLength = 0
 let chosenArray = ""
 
@@ -72,6 +70,16 @@ let workPressed = false
 let otherPressed = false
 
 showDesigns.addEventListener("click", () => {
+    if (otherPressed === true) {
+        otherArrow.setAttribute('class', 'flipArrowBack')
+        otherPressed = false
+        displayContent.innerHTML = ""
+    }
+    if (workPressed === true) {
+        workArrow.setAttribute('class', 'flipArrowBack')
+        workPressed = false
+        displayContent.innerHTML = ""
+    }
     if (designPressed === true) {
         designArrow.setAttribute('class', 'flipArrowBack')
         designPressed = false
@@ -86,12 +94,22 @@ showDesigns.addEventListener("click", () => {
 })
 
 showWork.addEventListener("click", () => {
+    if (otherPressed === true) {
+        otherArrow.setAttribute('class', 'flipArrowBack')
+        otherPressed = false
+        displayContent.innerHTML = ""
+    }
+    if (designPressed === true) {
+        designArrow.setAttribute('class', 'flipArrowBack')
+        designPressed = false
+        displayContent.innerHTML = ""
+    } 
     if (workPressed === true) {
         workArrow.setAttribute('class', 'flipArrowBack')
         workPressed = false
         displayContent.innerHTML = ""
     } else {
-        workPressed = true
+    workPressed = true
     chosenArrayLength = workArray.length
     chosenArray = workArray
     workArrow.setAttribute('class', 'flipArrow')
@@ -100,6 +118,16 @@ showWork.addEventListener("click", () => {
 })
 
 showOther.addEventListener("click", () => {
+    if (workPressed === true) {
+        workArrow.setAttribute('class', 'flipArrowBack')
+        workPressed = false
+        displayContent.innerHTML = ""
+    }
+    if (designPressed === true) {
+        designArrow.setAttribute('class', 'flipArrowBack')
+        designPressed = false
+        displayContent.innerHTML = ""
+    } 
     if (otherPressed === true) {
         otherArrow.setAttribute('class', 'flipArrowBack')
         otherPressed = false
@@ -130,13 +158,13 @@ function placeElements() {
              + ' </h3>'
              + '<p>' 
              + chosenArray[arrayNumber].info 
-             +'</p></div>'
-             + '<button><a href="' 
+             +'</p></div><div class="displayContentButtons">'
+             + '<a href="' 
              + chosenArray[arrayNumber].websiteLink  
-             + '">Link til nettsiden</a></button>'
-             + '<button><a href="' 
+             + '">Link til nettsiden</a>'
+             + '<a href="' 
              + chosenArray[arrayNumber].gitLink 
-             + '">Link til GitHub</a></button>'
+             + '">Link til GitHub</a></div>'
              + '</div></div>' 
         displayContent.appendChild(divElement)
         arrayNumber = arrayNumber + 1

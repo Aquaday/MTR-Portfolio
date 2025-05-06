@@ -6,22 +6,22 @@ function darkMode() {
         darkModeButtonChange.textContent = "Dark Mode"
         document.documentElement.style.setProperty('--black', '#000')
         document.documentElement.style.setProperty('--white', '#fff')
-        document.documentElement.style.setProperty('--darkestblue', '#03045eff')
-        document.documentElement.style.setProperty('--lightblue', '#90e0efff')
+        document.documentElement.style.setProperty('--gray', '#888888')
+        document.documentElement.style.setProperty('--lightgray', '#bbbbbb')
         wackyModeState = false
     } else {
         if (darkModeOn === false) {
-            document.documentElement.style.setProperty('--black', '#fff')
-            document.documentElement.style.setProperty('--white', '#000')
-            document.documentElement.style.setProperty('--darkestblue', '#90e0efff')
-            document.documentElement.style.setProperty('--lightblue', '#03045eff')
+        document.documentElement.style.setProperty('--black', '#fff')
+        document.documentElement.style.setProperty('--white', '#000')
+        document.documentElement.style.setProperty('--gray', '#bbbbbb')
+        document.documentElement.style.setProperty('--lightgray', '#888888')
         darkModeOn = true
     } else {
         darkModeOn = false
         document.documentElement.style.setProperty('--black', '#000')
         document.documentElement.style.setProperty('--white', '#fff')
-        document.documentElement.style.setProperty('--darkestblue', '#03045eff')
-        document.documentElement.style.setProperty('--lightblue', '#90e0efff')
+        document.documentElement.style.setProperty('--gray', '#888888')
+        document.documentElement.style.setProperty('--lightgray', '#bbbbbb')
     }  
 
     }
@@ -45,9 +45,9 @@ function wackyMode() {
             randomNumber = Math.floor(Math.random()* colorHexArray.length);
             document.documentElement.style.setProperty('--white', colorHexArray[randomNumber])
             randomNumber = Math.floor(Math.random()* colorHexArray.length);
-            document.documentElement.style.setProperty('--darkestblue', colorHexArray[randomNumber])
+            document.documentElement.style.setProperty('--gray', colorHexArray[randomNumber])
             randomNumber = Math.floor(Math.random()* colorHexArray.length);
-            document.documentElement.style.setProperty('--lightblue', colorHexArray[randomNumber])
+            document.documentElement.style.setProperty('--lightgray', colorHexArray[randomNumber])
         wackyModeState = true
 }
 

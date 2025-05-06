@@ -21,17 +21,19 @@ body {
 }
 
 li,
+
 a {
   text-decoration: none;
   list-style: none;
+  color: var(--black);
 }
 
 /* __________________________NAV __________________________ */
 
 nav {
-  height: 5vh;
+  height: 80px;
   min-height: 50px;
-  background-color: var(--darkerblue);
+  background-color: var(--lightgray);
   color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -39,23 +41,27 @@ nav {
   padding: 0px 30px;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
+nav h1 {
+  font-size: 113px;
 }
 
-nav a 
+nav ul {
+  display: flex;
+  gap: 50px;
+}
 
 .darkModeButton, .wackyButton {
   border: 2px solid black;
-  height: 20px;
-  width: 70px;
+  height: 40px;
+  width: 100px;
   text-align: center;
-  line-height: 20px;
+  line-height: 40px;
+  margin: 0px 20px;
 }
 
 .wackyButton {
-  background-color: var(--white);
+  background-color: var(--black);
+  color: orange;
 }
 
 /* __________________________Global class__________________________ */
@@ -86,6 +92,7 @@ nav a
 #groupHeaders div {
   width: 33%;
   border: 2px solid var(--gray);
+  background-color: var(--white);
   line-height: 20px;
   padding: 10px;
   margin: 0;
@@ -94,6 +101,7 @@ nav a
   justify-content: center;
   align-items: center;
 }
+
 #groupHeaders img {
   width: 20px;
   height: 20px;
@@ -104,21 +112,41 @@ nav a
 }
 
 #displayContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-height: 50vh;
+  padding: 20px;
+  background-color: var(--white);
 }
 
 #displayContent img {
-  height: 10vh;
+  height: 30vh;
 }
 
 .divElement {
-  border-bottom: 1px solid var(--lightgray);
-  padding: 10px;
+  border-bottom: 1px solid var(--gray);
+  text-align: center;
+  margin: 15px 0px;
+
 }
 
-.divElement button {
-  padding: 5px;
+.displayContentButtons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.divElement a {
+  padding: 20px;
   font-size: 150%;
+  margin: 0px 20px;
+  color: var(--white);
+  border-radius: 5px;
+  background-color: var(--lightgray);
+  border: 2px solid var(--black);
 }
 
 .flipArrow {

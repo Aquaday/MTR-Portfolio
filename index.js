@@ -10,7 +10,7 @@ wackyButton.addEventListener("click", wackyMode)
 
 let designsArray = [
     {
-        image: "stone.png",
+        image: "designImages/FoundationFurnitures.png",
         name: "Foundation Furnitures",
         info: "A design project, idea from Goodbrief",
         websiteLink : "https://goodbrieffoundationfurnitures.vercel.app/",
@@ -22,20 +22,6 @@ let designsArray = [
         info: "First website created from Kodeloftet course",
         websiteLink : "https://first-website-fjellturer-i-norge.vercel.app/",
         gitLink: "https://github.com/Aquaday/kodeloftet-oppgave-3-plan-and-create-website"
-    },
-    {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        gitLink: ""
-    },
-    {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        gitLink: ""
     }
 ]
 
@@ -46,21 +32,21 @@ let workArray = [
 
 let otherArray = [
     {
-        image: "stone.png",
+        image: "otherImages/RockPaperScissors.png",
         name: "rock-paper-scissors",
         info: "Stein saks papir med ting på",
         websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
         gitLink: "https://stackblitz.com/~/github.com/Aquaday/rock-paper-scissors"
     },
     {
-        image: "stone.png",
+        image: "otherImages/t-rex-run.png",
         name: "T-Rex run/Dino game",
         info: "Jump over obstacles and get a new high score!",
         websiteLink : "https://javascript-t-rex-run.vercel.app/",
         gitLink: "https://github.com/Aquaday/javascript-t-rex-run"
     },
     {
-        image: "stone.png",
+        image: "otherImages/CatAndChuckNorris.png",
         name: "Cat fact and Chuck Norris jokes",
         info: "Get 10 cat facts, and get a random Chuck Norris joke when you press the button!",
         websiteLink : "https://oppgave-5-kodeloftet-api.vercel.app/",
@@ -93,7 +79,7 @@ showDesigns.addEventListener("click", () => {
     } else {
     chosenArrayLength = designsArray.length
     chosenArray = designsArray
-    designArrow.classList.add("flipArrow")
+    designArrow.setAttribute('class', 'flipArrow')
     designPressed = true
     placeElements()
 }
@@ -108,7 +94,7 @@ showWork.addEventListener("click", () => {
         workPressed = true
     chosenArrayLength = workArray.length
     chosenArray = workArray
-    workArrow.classList.add("flipArrow")
+    workArrow.setAttribute('class', 'flipArrow')
     placeElements()
 }
 })
@@ -122,7 +108,7 @@ showOther.addEventListener("click", () => {
         otherPressed = true
     chosenArrayLength = otherArray.length
     chosenArray = otherArray
-    otherArrow.classList.add("flipArrow")
+    otherArrow.setAttribute('class', 'flipArrow')
     placeElements()
 }
 })

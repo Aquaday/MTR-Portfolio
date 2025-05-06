@@ -17,11 +17,11 @@ let designsArray = [
         gitLink: "https://github.com/Aquaday/Goodbrief---Foundation-Furnitures"
     },
     {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        gitLink: "https://github.com/Aquaday/Goodbrief---Foundation-Furnitures?tab=readme-ov-file"
+        image: "designImages/Fjellturerinorge.png",
+        name: "Fjellturer i norge",
+        info: "First website created from Kodeloftet course",
+        websiteLink : "https://first-website-fjellturer-i-norge.vercel.app/",
+        gitLink: "https://github.com/Aquaday/kodeloftet-oppgave-3-plan-and-create-website"
     },
     {
         image: "stone.png",

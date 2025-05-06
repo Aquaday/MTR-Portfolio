@@ -11,56 +11,35 @@ wackyButton.addEventListener("click", wackyMode)
 let designsArray = [
     {
         image: "stone.png",
-        name: "rock-paper-scissors",
-        info: "Stein saks papir med ting på",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: "https://stackblitz.com/~/github.com/Aquaday/rock-paper-scissors"
+        name: "Foundation Furnitures",
+        info: "A design project, idea from Goodbrief",
+        websiteLink : "https://goodbrieffoundationfurnitures.vercel.app/",
+        gitLink: "https://github.com/Aquaday/Goodbrief---Foundation-Furnitures"
     },
     {
         image: "stone.png",
         name: "Orange Armchair",
         info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: "https://github.com/Aquaday/Goodbrief---Foundation-Furnitures?tab=readme-ov-file"
+        websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
+        gitLink: "https://github.com/Aquaday/Goodbrief---Foundation-Furnitures?tab=readme-ov-file"
     },
     {
         image: "stone.png",
         name: "Orange Armchair",
         info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
+        websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
+        gitLink: ""
     },
     {
         image: "stone.png",
         name: "Orange Armchair",
         info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
+        websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
+        gitLink: ""
     }
 ]
 
 let workArray = [
-    {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: "https://stackblitz.com/~/github.com/Aquaday/rock-paper-scissors"
-    },
-    {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
-    },
-    {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
-    }
 
 ]
 
@@ -68,47 +47,29 @@ let workArray = [
 let otherArray = [
     {
         image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: "https://stackblitz.com/~/github.com/Aquaday/rock-paper-scissors"
+        name: "rock-paper-scissors",
+        info: "Stein saks papir med ting på",
+        websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
+        gitLink: "https://stackblitz.com/~/github.com/Aquaday/rock-paper-scissors"
     },
     {
         image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
+        name: "T-Rex run/Dino game",
+        info: "Jump over obstacles and get a new high score!",
+        websiteLink : "https://javascript-t-rex-run.vercel.app/",
+        gitLink: "https://github.com/Aquaday/javascript-t-rex-run"
     },
     {
         image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
-    },
-    {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
-    },
-    {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
-    },
-    {
-        image: "stone.png",
-        name: "Orange Armchair",
-        info: "An orange armchair with matching footrest",
-        gitLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        stackLink: ""
+        name: "Cat fact and Chuck Norris jokes",
+        info: "Get 10 cat facts, and get a random Chuck Norris joke when you press the button!",
+        websiteLink : "https://oppgave-5-kodeloftet-api.vercel.app/",
+        gitLink: "https://github.com/Aquaday/Oppgave-5-kodeloftet-API"
     }
+
 ]
+
+
 
 let chosenArrayLength = 0
 let chosenArray = ""
@@ -120,29 +81,57 @@ let designArrow = document.querySelector("#designArrow")
 let workArrow = document.querySelector("#workArrow")
 let otherArrow = document.querySelector("#otherArrow")
 
+let designPressed = false
+let workPressed = false
+let otherPressed = false
+
 showDesigns.addEventListener("click", () => {
+    if (designPressed === true) {
+        designArrow.setAttribute('class', 'flipArrowBack')
+        designPressed = false
+        displayContent.innerHTML = ""
+    } else {
     chosenArrayLength = designsArray.length
     chosenArray = designsArray
     designArrow.classList.add("flipArrow")
+    designPressed = true
     placeElements()
+}
 })
 
 showWork.addEventListener("click", () => {
+    if (workPressed === true) {
+        workArrow.setAttribute('class', 'flipArrowBack')
+        workPressed = false
+        displayContent.innerHTML = ""
+    } else {
+        workPressed = true
     chosenArrayLength = workArray.length
     chosenArray = workArray
     workArrow.classList.add("flipArrow")
     placeElements()
+}
 })
 
 showOther.addEventListener("click", () => {
+    if (otherPressed === true) {
+        otherArrow.setAttribute('class', 'flipArrowBack')
+        otherPressed = false
+        displayContent.innerHTML = ""
+    } else {
+        otherPressed = true
     chosenArrayLength = otherArray.length
     chosenArray = otherArray
     otherArrow.classList.add("flipArrow")
     placeElements()
+}
 })
 
 
 function placeElements() {
+    if (chosenArrayLength === 0) {
+        displayContent.innerHTML = "Nothing here yet!"
+    } else {
     let arrayNumber = 0
     const displayContent = document.querySelector("#displayContent")
     displayContent.innerHTML = ""
@@ -157,7 +146,7 @@ function placeElements() {
              + chosenArray[arrayNumber].info 
              +'</p></div>'
              + '<button><a href="' 
-             + chosenArray[arrayNumber].gitLink  
+             + chosenArray[arrayNumber].websiteLink  
              + '">Link til nettsiden</a></button>'
              + '<button><a href="' 
              + chosenArray[arrayNumber].gitLink 
@@ -167,6 +156,7 @@ function placeElements() {
         arrayNumber = arrayNumber + 1
         
     }
+}
 }
 
 placeElements()

@@ -95,6 +95,7 @@ otherPressed = true
 chosenArrayLength = otherArray.length
 chosenArray = otherArray
 otherArrow.setAttribute('class', 'flipArrow')
+showOther.style.backgroundColor = "var(--lightest)"
 placeElements()
 
 showDesigns.addEventListener("click", () => {
@@ -102,19 +103,23 @@ showDesigns.addEventListener("click", () => {
         otherArrow.setAttribute('class', 'flipArrowBack')
         otherPressed = false
         displayContent.innerHTML = ""
+        showOther.style.backgroundColor = ""
     }
     if (workPressed === true) {
         workArrow.setAttribute('class', 'flipArrowBack')
         workPressed = false
         displayContent.innerHTML = ""
+        showWork.style.backgroundColor = ""
     }
     if (designPressed === true) {
         designArrow.setAttribute('class', 'flipArrowBack')
         designPressed = false
         displayContent.innerHTML = ""
+        showDesigns.style.backgroundColor = ""
     } else {
     chosenArrayLength = designsArray.length
     chosenArray = designsArray
+    showDesigns.style.backgroundColor = "var(--lightest)"
     designArrow.setAttribute('class', 'flipArrow')
     designPressed = true
     placeElements()
@@ -126,21 +131,25 @@ showWork.addEventListener("click", () => {
         otherArrow.setAttribute('class', 'flipArrowBack')
         otherPressed = false
         displayContent.innerHTML = ""
+        showOther.style.backgroundColor = ""
     }
     if (designPressed === true) {
         designArrow.setAttribute('class', 'flipArrowBack')
         designPressed = false
         displayContent.innerHTML = ""
+        showDesigns.style.backgroundColor = ""
     } 
     if (workPressed === true) {
         workArrow.setAttribute('class', 'flipArrowBack')
         workPressed = false
         displayContent.innerHTML = ""
+        showWork.style.backgroundColor = ""
     } else {
     workPressed = true
     chosenArrayLength = workArray.length
     chosenArray = workArray
     workArrow.setAttribute('class', 'flipArrow')
+    showWork.style.backgroundColor = "var(--lightest)"
     placeElements()
 }
 })
@@ -150,21 +159,25 @@ showOther.addEventListener("click", () => {
         workArrow.setAttribute('class', 'flipArrowBack')
         workPressed = false
         displayContent.innerHTML = ""
+        showWork.style.backgroundColor = ""
     }
     if (designPressed === true) {
         designArrow.setAttribute('class', 'flipArrowBack')
         designPressed = false
         displayContent.innerHTML = ""
+        showDesigns.style.backgroundColor = ""
     } 
     if (otherPressed === true) {
         otherArrow.setAttribute('class', 'flipArrowBack')
         otherPressed = false
         displayContent.innerHTML = ""
+        showOther.style.backgroundColor = ""
     } else {
         otherPressed = true
     chosenArrayLength = otherArray.length
     chosenArray = otherArray
     otherArrow.setAttribute('class', 'flipArrow')
+    showOther.style.backgroundColor = "var(--lightest)"
     placeElements()
 }
 })

@@ -8,6 +8,9 @@ function darkMode() {
         document.documentElement.style.setProperty('--white', '#fff')
         document.documentElement.style.setProperty('--gray', '#888888')
         document.documentElement.style.setProperty('--lightgray', '#bbbbbb')
+        document.documentElement.style.setProperty('--dark', '#023e8a')
+        document.documentElement.style.setProperty('--lighter', '#0096c7')
+        document.documentElement.style.setProperty('--lightest', '#ade8f4')
         wackyModeState = false
     } else {
         if (darkModeOn === false) {
@@ -15,6 +18,9 @@ function darkMode() {
         document.documentElement.style.setProperty('--white', '#000')
         document.documentElement.style.setProperty('--gray', '#bbbbbb')
         document.documentElement.style.setProperty('--lightgray', '#888888')
+        document.documentElement.style.setProperty('--dark', '#ade8f4')
+        document.documentElement.style.setProperty('--lighter', '#0096c7')
+        document.documentElement.style.setProperty('--lightest', '#023e8a')
         darkModeOn = true
     } else {
         darkModeOn = false
@@ -22,6 +28,9 @@ function darkMode() {
         document.documentElement.style.setProperty('--white', '#fff')
         document.documentElement.style.setProperty('--gray', '#888888')
         document.documentElement.style.setProperty('--lightgray', '#bbbbbb')
+        document.documentElement.style.setProperty('--dark', '#023e8a')
+        document.documentElement.style.setProperty('--lighter', '#0096c7')
+        document.documentElement.style.setProperty('--lightest', '#ade8f4')
     }  
 
     }

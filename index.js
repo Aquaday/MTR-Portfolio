@@ -36,7 +36,7 @@ let otherArray = [
         name: "rock-paper-scissors",
         info: "Stein saks papir med ting på",
         websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
-        gitLink: "https://stackblitz.com/~/github.com/Aquaday/rock-paper-scissors"
+        gitLink: "https://github.com/Aquaday/rock-paper-scissors"
     },
     {
         image: "otherImages/t-rex-run.png",
@@ -68,6 +68,13 @@ let otherArrow = document.querySelector("#otherArrow")
 let designPressed = false
 let workPressed = false
 let otherPressed = false
+
+// open others
+otherPressed = true
+chosenArrayLength = otherArray.length
+chosenArray = otherArray
+otherArrow.setAttribute('class', 'flipArrow')
+placeElements()
 
 showDesigns.addEventListener("click", () => {
     if (otherPressed === true) {

@@ -57,6 +57,12 @@ function wackyMode() {
             document.documentElement.style.setProperty('--gray', colorHexArray[randomNumber])
             randomNumber = Math.floor(Math.random()* colorHexArray.length);
             document.documentElement.style.setProperty('--lightgray', colorHexArray[randomNumber])
+            randomNumber = Math.floor(Math.random()* colorHexArray.length);
+            document.documentElement.style.setProperty('--dark', colorHexArray[randomNumber])
+            randomNumber = Math.floor(Math.random()* colorHexArray.length);
+            document.documentElement.style.setProperty('--lighter', colorHexArray[randomNumber])
+            randomNumber = Math.floor(Math.random()* colorHexArray.length);
+            document.documentElement.style.setProperty('--lightest', colorHexArray[randomNumber])
         wackyModeState = true
 }
 

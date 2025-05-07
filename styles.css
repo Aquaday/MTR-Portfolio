@@ -150,7 +150,7 @@ nav h1 {
 }
 
 #groupHeaders div {
-  max-width: 240px;
+  width: 240px;
 }
 
 #groupHeaders {
@@ -173,7 +173,7 @@ nav h1 {
 }
 
 #displayContent img {
-  height: 30vh;
+  width: 400px;
   box-shadow: 0 5px 10px rgba(72, 72, 72, 0.1),
   0 5px 10px rgba(86, 86, 86, 0.1);
 }
@@ -202,6 +202,8 @@ nav h1 {
   border: 1px solid var(--dark);
   box-shadow: 0 3px 5px rgba(72, 72, 72, 0.2),
               0 3px 5px rgba(86, 86, 86, 0.1);
+
+  cursor: pointer;
 }
 
 .flipArrow {
@@ -215,6 +217,49 @@ nav h1 {
   animation-duration: 200ms;
   animation-fill-mode: forwards;
 }
+
+@media (max-width: 450px) {
+  #heroSection {
+    min-height: 450px;
+  }
+  #heroDiv {
+    max-width: 320px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 75%;
+  }
+  #heroImg {
+    width: 150px;
+  }
+  #heroDiv h3, p {
+    width: 300px;
+  }
+  #displayContent img {
+    width: 250px;
+  }
+  nav {
+    flex-direction: column;
+    height: 160px;
+    padding-bottom: 20px;
+  }
+  #groupHeaders div {
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+  }
+  #groupHeaders {
+    gap: 0;
+  }
+  .divElement a {
+    font-size: 100%;
+    padding: 15px;
+  }
+  
+}
+
+
+
 
 
 @keyframes flipArrow {

@@ -53,6 +53,13 @@ let workArray = [
 
 let otherArray = [
     {
+        image: "Snake image",
+        name: "Javascript snake",
+        info: "Simple javascript snake game",
+        websiteLink : "https://snake-javascript-peach.vercel.app/",
+        gitLink: "https://github.com/Aquaday/snake-javascript"
+    },
+    {
         image: "otherImages/RockPaperScissors.png",
         name: "rock-paper-scissors",
         info: "Rock paper scissors, 4 different versions",

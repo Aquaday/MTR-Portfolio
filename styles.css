@@ -140,6 +140,7 @@ nav h1 {
   gap: 10px;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 #groupHeaders img {
@@ -156,6 +157,7 @@ nav h1 {
   display: flex;
   background-color: var(--white);
   gap: 2vw;
+  flex-wrap: wrap;
 }
 
 #displayContent {

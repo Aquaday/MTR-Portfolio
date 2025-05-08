@@ -36,7 +36,8 @@ a {
 nav {
   height: 80px;
   min-height: 50px;
-  background-color: var(--lighter);
+  background-color: var(--white);
+  border-bottom: 1px solid var(--lighter);
   color: var(--black);
   display: flex;
   justify-content: space-between;
@@ -57,9 +58,11 @@ nav h1 {
 } */
 
 .darkModeButton, .wackyButton {
-  border: 2px solid black;
+  border: 2px solid #55BFD7;
   height: 40px;
   width: 100px;
+  background-color: var(--black);
+  color: var(--white);
   text-align: center;
   font-size: 15px;
   line-height: 40px;
@@ -67,8 +70,8 @@ nav h1 {
 }
 
 .wackyButton {
-  background-color: var(--black);
-  color: orange;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 /* __________________________Global class__________________________ */
@@ -126,14 +129,25 @@ nav h1 {
 
 /* _____________________________Pages___________________________________________________ */
 
+#groupHeaders {
+  display: flex;
+  background-color: var(--white);
+  gap: 2vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid var(--lightest);
+}
+
 #groupHeaders div {
-  min-width: 220px;
+  min-width: 200px;
   padding: 0px 20px;
   border: 1px solid var(--dark);
   border-bottom: none;
   border-radius: 8px 8px 0px 0px;
-  background-color: var(--lighter);
-  color: var(--white);
+  background-color: var(--lightest);
+  color: var(--dark);
   line-height: 20px;
   margin: 0;
   display: flex;
@@ -153,35 +167,35 @@ nav h1 {
   width: 240px;
 }
 
-#groupHeaders {
-  display: flex;
-  background-color: var(--white);
-  gap: 2vw;
-  flex-wrap: wrap;
-}
+
 
 #displayContent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  padding: 20px;
-  background-color: var(--lightest);
+  min-height: 50vh;
+  padding: 50px;
+  background-color: var(--white);
   box-shadow: 0 5px 15px rgba(72, 72, 72, 0.8),
               0 15px 15px rgba(86, 86, 86, 0.2);
 }
 
 #displayContent img {
-  width: 400px;
+  width: 100%;
   box-shadow: 0 5px 10px rgba(72, 72, 72, 0.1),
   0 5px 10px rgba(86, 86, 86, 0.1);
 }
 
 .divElement {
-  border-bottom: 1px solid var(--lightest);
+  border: 1px solid var(--lightest);
   text-align: center;
-  margin: 15px 0px;
+  margin: 15px;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Kanit";
 
 }
 
@@ -193,18 +207,24 @@ nav h1 {
 }
 
 .divElement a {
-  padding: 20px;
-  font-size: 150%;
+  padding: 10px;
+  font-size: 125%;
   margin: 0px 20px;
-  color: var(--white);
-  border-radius: 20px;
-  background-color: var(--lighter);
+  color: var(--dark);
+  border-radius: 10px;
+  background-color: var(--white);
   border: 1px solid var(--dark);
   box-shadow: 0 3px 5px rgba(72, 72, 72, 0.2),
               0 3px 5px rgba(86, 86, 86, 0.1);
 
   cursor: pointer;
 }
+
+.divElement h3 {
+  color: var(--black);
+  font-size: 200%;
+}
+
 
 .flipArrow {
   animation-name: flipArrow;
@@ -218,7 +238,7 @@ nav h1 {
   animation-fill-mode: forwards;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 890px) {
   #heroSection {
     min-height: 450px;
   }
@@ -235,9 +255,7 @@ nav h1 {
   #heroDiv h3, p {
     width: 300px;
   }
-  #displayContent img {
-    width: 250px;
-  }
+
   nav {
     flex-direction: column;
     height: 160px;

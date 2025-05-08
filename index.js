@@ -53,7 +53,7 @@ let workArray = [
 
 let otherArray = [
     {
-        image: "Snake image",
+        image: "otherImages/javascript snake.png",
         name: "Javascript snake",
         info: "Simple javascript snake game",
         websiteLink : "https://snake-javascript-peach.vercel.app/",
@@ -61,7 +61,7 @@ let otherArray = [
     },
     {
         image: "otherImages/RockPaperScissors.png",
-        name: "rock-paper-scissors",
+        name: "Rock paper scissors",
         info: "Rock paper scissors, 4 different versions",
         websiteLink : "https://rock-paper-scissors-eight-snowy.vercel.app/",
         gitLink: "https://github.com/Aquaday/rock-paper-scissors"
@@ -102,7 +102,7 @@ otherPressed = true
 chosenArrayLength = otherArray.length
 chosenArray = otherArray
 otherArrow.setAttribute('class', 'flipArrow')
-showOther.style.backgroundColor = "var(--lightest)"
+showOther.style.backgroundColor = "var(--white)"
 placeElements()
 
 showDesigns.addEventListener("click", () => {
@@ -126,7 +126,7 @@ showDesigns.addEventListener("click", () => {
     } else {
     chosenArrayLength = designsArray.length
     chosenArray = designsArray
-    showDesigns.style.backgroundColor = "var(--lightest)"
+    showDesigns.style.backgroundColor = "var(--white)"
     designArrow.setAttribute('class', 'flipArrow')
     designPressed = true
     placeElements()
@@ -156,7 +156,7 @@ showWork.addEventListener("click", () => {
     chosenArrayLength = workArray.length
     chosenArray = workArray
     workArrow.setAttribute('class', 'flipArrow')
-    showWork.style.backgroundColor = "var(--lightest)"
+    showWork.style.backgroundColor = "var(--white)"
     placeElements()
 }
 })
@@ -184,7 +184,7 @@ showOther.addEventListener("click", () => {
     chosenArrayLength = otherArray.length
     chosenArray = otherArray
     otherArrow.setAttribute('class', 'flipArrow')
-    showOther.style.backgroundColor = "var(--lightest)"
+    showOther.style.backgroundColor = "var(--white)"
     placeElements()
 }
 })
@@ -201,19 +201,19 @@ function placeElements() {
         let divElement = document.createElement("div")
         divElement.classList.add("divElement")
         divElement.innerHTML = ' <img src="' + chosenArray[arrayNumber].image +
-            '"><div> <div> <h3> '
+            '"> <h3> '
              +  chosenArray[arrayNumber].name 
              + ' </h3>'
              + '<p>' 
              + chosenArray[arrayNumber].info 
-             +'</p></div><div class="displayContentButtons">'
+             +'</p> <div class="displayContentButtons">'
              + '<a href="' 
              + chosenArray[arrayNumber].websiteLink  
              + '">Link to Website</a>'
              + '<a href="' 
              + chosenArray[arrayNumber].gitLink 
              + '">Link to GitHub</a></div>'
-             + '</div></div>' 
+              
         displayContent.appendChild(divElement)
         arrayNumber = arrayNumber + 1
         

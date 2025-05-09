@@ -53,6 +53,13 @@ let workArray = [
 
 let otherArray = [
     {
+        image: "otherImages/javascript space invaders.png",
+        name: "Space Invaders",
+        info: "Simple Space Invaders game",
+        websiteLink : "https://javascript-space-invaders.vercel.app/",
+        gitLink: "https://github.com/Aquaday/Javascript-Space-Invaders"
+    },
+    {
         image: "otherImages/javascript snake.png",
         name: "Javascript snake",
         info: "Simple javascript snake game",
@@ -80,6 +87,7 @@ let otherArray = [
         websiteLink : "https://oppgave-5-kodeloftet-api.vercel.app/",
         gitLink: "https://github.com/Aquaday/Oppgave-5-kodeloftet-API"
     }
+    
 
 ]
 

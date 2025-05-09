@@ -123,7 +123,7 @@ nav h1 {
   justify-content: space-evenly;
 }
 
-#heroDiv h3, p {
+#heroDiv h3, #heroDiv p {
   width: 400px;
 }
 
@@ -252,7 +252,7 @@ nav h1 {
   #heroImg {
     width: 150px;
   }
-  #heroDiv h3, p {
+  #heroDiv h3, #heroDiv p {
     width: 300px;
   }
 
